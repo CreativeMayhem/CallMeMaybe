@@ -18,7 +18,7 @@ Plivo >= 4.0.0
 Required gems
 
 ```sh
-gem instal require_all
+gem install require_all
 gem install tty-prompt
 gem install builder
 gem install rubygems
