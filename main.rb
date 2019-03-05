@@ -54,7 +54,7 @@ prompt = TTY::Prompt.new
  menu1action = prompt.select("Select Action") do |menu|
   menu.choice 'Spoof Call', 1
   menu.choice 'Spoof SMS', 2
-  menu.choice 'Brute Call Number Range', 3
+  menu.choice 'Brute Call Number Range (not built)', 3
   menu.choice 'Quit', 0
  end
 
