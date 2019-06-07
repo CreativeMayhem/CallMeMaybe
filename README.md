@@ -4,7 +4,7 @@
 The initial features this tool allows is: Spoofing Phone Calls, Spoofing SMS, Brute Force Dialling of Phone Number Ranges (to detect valid phone company numbers/extensions and record audio)
 
 > There are two versions of the tool, neither written well (IANAD - I am not a dev)
-> There is a ruby version for cli, and a python version that runs a web interface (ideal for mobile access)
+> There is a ruby version for cli, and a cut-down python version that runs a web interface and supports the spoofing functions only (ideal for mobile access)
 
 ![](screenshot.jpg)
 
