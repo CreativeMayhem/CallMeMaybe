@@ -1,7 +1,9 @@
 # Call Me Maybe
 > Social Engineering Attack Suite for the Telephone Network (integrated with Plivo).
 
-The initial features this tool allows is: Spoofing Phone Calls, Spoofing SMS, Brute Force Dialling of Phone Number Ranges (to detect valid phone company numbers/extensions and record audio)
+Disclaimer, this is nothing brilliant, it's really a tool to interact with the Plivo API with a certain goal...
+Disclaimer 2, this code is bad. I know.
+The initial features this tool allows are: Spoofing Phone Calls, Spoofing SMS. Soon: Brute Force Dialling of Phone Number Ranges (to detect valid phone company numbers/extensions and record audio)
 
 > There are two versions of the tool, neither written well (IANAD - I am not a dev)
 > There is a ruby version for cli, and a cut-down python version that runs a web interface and supports the spoofing functions only (ideal for mobile access)
