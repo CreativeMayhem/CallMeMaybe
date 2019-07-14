@@ -2,8 +2,11 @@
 > Social Engineering Attack Suite for the Telephone Network (integrated with Plivo).
 
 Disclaimer 1, this tool is only for use with numbers you are authorised to use. 
+
 Disclaimer 2, this is nothing brilliant, it's really a tool to interact with the Plivo API with a certain goal...
+
 Disclaimer 3, this code is bad. I know.
+
 The initial features this tool allows are: Spoofing Phone Calls, Spoofing SMS. Soon: Brute Force Dialling of Phone Number Ranges (to detect valid phone company numbers/extensions and record audio)
 
 > There are two versions of the tool, neither written well (IANAD - I am not a dev)
