@@ -16,6 +16,8 @@ The initial features this tool allows are: Spoofing Phone Calls, Spoofing SMS. S
 
 ## Requirements
 
+Public IP Address
+
 Ruby >= 2.0
 
 Plivo >= 4.0.0
