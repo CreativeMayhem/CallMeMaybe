@@ -104,6 +104,18 @@ HTML_MESSAGE = """
 </body>
 """
 
+HTML_REDIRECT = """
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Refresh" content="4; url=/" />
+  </head>
+  <body>
+    <p>Successfully Executed!.</p>
+  </body>
+</html>
+"""
+
 class IndexHandler(DigestAuthMixin, tornado.web.RequestHandler):
     @auth_required(realm='Protected', auth_func=credentials.get)
     def get(self):
@@ -161,9 +173,7 @@ class VoiceAnswerFunction(DigestAuthMixin, tornado.web.RequestHandler):
 
 class Success(tornado.web.RequestHandler):
     def get(self):
-        self.write("Successfully Executed!")
-        time.sleep(3)
-        self.redirect('/', status=303)
+        self.write(HTML_REDIRECT)
 
 application = tornado.web.Application([
     (r'/', IndexHandler),
