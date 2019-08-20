@@ -15,7 +15,7 @@ The initial features this tool allows are: Spoofing Phone Calls, Spoofing SMS. S
 ![](screenshot.jpg)
 
 ## Requirements
-
+### CLI Version
 Public IP Address
 
 Ruby >= 2.0
@@ -24,8 +24,14 @@ Plivo >= 4.0.0
 
 (gems as listed below)
 
-## Installation
+### Web Version
+python3
+pip
+tornado
+plivo
 
+## Installation
+### CLI Version
 Required gems
 
 ```sh
@@ -36,21 +42,34 @@ gem install rubygems
 gem install plivo
 gem install net
 ```
-
-## Plivo API:
-
 ```sh
 Add your Plivo API authentication to: ./config/config.rb
 AUTH_ID = "<yourIDhere>"
 AUTH_TOKEN = "<yourTokenhere>"
 ```
-
+### Web Version
+```sh
+pip3 install tornado
+pip3 install plivo
+## Plivo API:
+```
+```sh
+Add your web interface authentication on the "credentials" line.
+Add your Plivo API auth:
+authid = "<yourIDhere>"
+authtoken = "<yourTokenhere>"
+Add your public URL to "externalurl"
+Add your certfile and key
+```
 ## Launching 
-
+### CLI Version
 ```sh
 ruby main.rb
 ```
-
+### Web Version
+```sh
+python3 cmm.py
+```
 ## Roadmap
 
 * 0.0.1
