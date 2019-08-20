@@ -62,7 +62,7 @@ HTML_CALL = """
 <div class="w3-container w3-card">
 <h1 style="text-align: center;"><strong><span style="font-family: Verdana,Geneva,sans-serif;"><em><span style="color: #2c82c9;">Call Me Maybe</span></em></span></strong></h1>
 <iframe width="0" height="0" border="0" name="emptyframe" id="emptyframe"></iframe>
-<form action="./makecall" method="post" target="emptyframe">
+<form action="./makecall" method="post">
 <div style="margin-bottom: 5px; text-align: center;">
 <p id="spoofnumberentry"><strong><span style="font-family: Tahoma,Geneva,sans-serif;">Number to Spoof:</span></strong></p>
 <input autocomplete="off" name="spoofnumber" type="text"/>
@@ -90,7 +90,7 @@ HTML_MESSAGE = """
 <div class="w3-container w3-card">
 <h1 style="text-align: center;"><strong><span style="font-family: Verdana,Geneva,sans-serif;"><em><span style="color: #2c82c9;">Call Me Maybe</span></em></span></strong></h1>
 <iframe width="0" height="0" border="0" name="emptyframe" id="emptyframe"></iframe>
-<form action="./sendmessage" method="post" target="emptyframe">
+<form action="./sendmessage" method="post">
 <div style="margin-bottom: 5px; text-align: center;">
 <p id="spoofnumberentry"><strong><span style="font-family: Tahoma,Geneva,sans-serif;">Number to Spoof:</span></strong></p>
 <input autocomplete="off" name="spoofnumber" type="text"/>
@@ -108,7 +108,6 @@ class IndexHandler(DigestAuthMixin, tornado.web.RequestHandler):
     @auth_required(realm='Protected', auth_func=credentials.get)
     def get(self):
         self.write(HTML_INDEX)
-		
 class IndexHandlerCall(DigestAuthMixin, tornado.web.RequestHandler):
     @auth_required(realm='Protected', auth_func=credentials.get)
     def get(self):
@@ -118,7 +117,7 @@ class IndexHandlerMessage(DigestAuthMixin, tornado.web.RequestHandler):
     @auth_required(realm='Protected', auth_func=credentials.get)
     def get(self):
         self.write(HTML_MESSAGE)
-
+        
 class MakeCallFunction(DigestAuthMixin, tornado.web.RequestHandler):
     @auth_required(realm='Protected', auth_func=credentials.get)
     def post(self):
@@ -164,7 +163,7 @@ class Success(tornado.web.RequestHandler):
     def get(self):
         self.write("Successfully Executed!")
         time.sleep(3)
-        self.redirect('/')
+        self.redirect('/', status=303)
 
 application = tornado.web.Application([
     (r'/', IndexHandler),
