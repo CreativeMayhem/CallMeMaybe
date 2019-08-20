@@ -53,6 +53,7 @@ AUTH_TOKEN = "<yourTokenhere>"
 ### Web Version
 ```sh
 pip3 install tornado
+pip3 install tornado_http_auth
 pip3 install plivo
 ```
 ```sh
