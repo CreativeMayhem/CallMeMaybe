@@ -26,8 +26,11 @@ Plivo >= 4.0.0
 
 ### Web Version
 python3
+
 pip
+
 tornado
+
 plivo
 
 ## Installation
@@ -51,7 +54,6 @@ AUTH_TOKEN = "<yourTokenhere>"
 ```sh
 pip3 install tornado
 pip3 install plivo
-## Plivo API:
 ```
 ```sh
 Add your web interface authentication on the "credentials" line.
