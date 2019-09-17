@@ -14,7 +14,7 @@ module Webserversetup
                         original_stdout = $stdout.clone
                         $stderr.reopen(File.new('/dev/null', 'w'))
                         $stdout.reopen(File.new('/dev/null', 'w'))
-                        Dir.chdir "./www"
+                        Dir.chdir "../www"
                         httpd ./
                         end
 end
