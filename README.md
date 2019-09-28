@@ -1,7 +1,7 @@
 # Call Me Maybe
 > Social Engineering Attack Suite for the Telephone Network (integrated with Plivo).
 
-Disclaimer 1, this tool is only for use with numbers you are authorised to use. 
+Disclaimer 1, this tool is only for use with numbers you are authorised to use. IANAL, check the laws and regulations in your local area.
 
 Disclaimer 2, this is nothing brilliant, it's really a tool to interact with the Plivo API with a certain goal...
 
